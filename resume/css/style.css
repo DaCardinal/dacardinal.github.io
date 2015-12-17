@@ -45,7 +45,7 @@ a:focus {
 }
 .sidebar img{
 	border:1px solid #fff;
-	padding:1em;
+/*	padding:1em;*/
 	width:100%;
 }
 .details{
@@ -186,13 +186,24 @@ h3.clr2{
 h3.clr3{
 	background:#3eb991;
 }
+h3.clr4{
+	background:#999;
+}
+h3.clr5{
+	background:#FB8C00;
+}
+h3.clr6{
+	background:#EF5350;
+}
 .copywrite{
 	padding-left:2em;
 	margin-top:1em;
+    margin-bottom: -20px;
+    text-align: center;
 }
 .copywrite p{
 	color:#999;
-	font-size:0.9em;
+	font-size:0.7em;
 }
 .copywrite p a{
 	color:#999;
