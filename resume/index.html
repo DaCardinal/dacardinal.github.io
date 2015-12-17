@@ -14,6 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Custom Theme files -->
  <link href="css/dashboard.css" rel="stylesheet">
 <link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/skillbar.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -116,23 +117,74 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <p>Other professional experience include job shadowing at Barclays, Ghana, Web development for Royal Sneda Ltd., TEDx Clark University, SURJ (Clark University)</p>
 			 </div>
 			 <div class="skill_list">
-				 <div class="skill1">
-					 <h4>Environments, Platforms and Software:</h4>
-					 <ul>					 
-						<li>Photoshop</li>
-						<li>Flash</li>
-						<li> Dreamweaver</li>
-						<li>In Design</li>
-					 </ul>
+				 <div class="skill1" style="width:100%;">
+					 <h4>Environments, Platforms, Frameworks and OS/Software:</h4>
+					 <p style="color:#999; font-weight:300; line-height:1.7em;">NetBeans, Apache, XCode, Android Studio, Azure Server, Eclipse, Ionic Framework, Angular JS, Laravel, Git, NodeJS, Gulp JS, Bower, WordPress, Novice in Kali Linux and MongoDB, Linux, Mac OS X, and Windows</p>
 				 </div>
 				 <div class="skill2">
-					 <h4>Programming Experience:</h4>
-					 <ul>					 
-						<li>HTML/CSS</li>
-						<li>ActionScript</li>
-						<li>PHP</li>
-						<li>Ruby on Rails</li>
-					 </ul>
+					 <h4 style="margin-top:12px;">Skillset</h4>
+                     <script>
+                        jQuery(document).ready(function(){
+                            jQuery('.skillbar').each(function(){
+                                jQuery(this).find('.skillbar-bar').animate({
+                                    width:jQuery(this).attr('data-percent')
+                                },6000);
+                            });
+                        });
+                     </script>
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+                        <div class="skillbar-bar" style="background: #e67e22;"></div>
+                        <div class="skill-bar-percent">100%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="75%">
+                        <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+                        <div class="skillbar-bar" style="background: #3498db;"></div>
+                        <div class="skill-bar-percent">75%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #2c3e50;"><span>JAVASCRIPT</span></div>
+                        <div class="skillbar-bar" style="background: #2c3e50;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+                        <div class="skillbar-bar" style="background: #5a68a5;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #333333;"><span>JAVA</span></div>
+                        <div class="skillbar-bar" style="background: #525252;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #27ae60;"><span>C#</span></div>
+                        <div class="skillbar-bar" style="background: #2ecc71;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title" style="background: #ff4081;"><span>PYTHON</span></div>
+                        <div class="skillbar-bar" style="background: #ff80ab;"></div>
+                        <div class="skill-bar-percent">60%</div>
+                    </div> <!-- End Skill Bar -->
+                     
+                     <div class="skillbar clearfix " data-percent="55%">
+                        <div class="skillbar-title" style="background: #C62828;"><span style="font-size:0.7em; padding:3px 6px;">OBJECTIVE-C/SWIFT</span></div>
+                        <div class="skillbar-bar" style="background: #E53935;"></div>
+                        <div class="skill-bar-percent">55%</div>
+                    </div> <!-- End Skill Bar -->
+                     
+                     <div class="skillbar clearfix " data-percent="75%">
+                        <div class="skillbar-title" style="background: #124e8c;"><span>SQL</span></div>
+                        <div class="skillbar-bar" style="background: #4288d0;"></div>
+                        <div class="skill-bar-percent">75%</div>
+                    </div> <!-- End Skill Bar -->
 				 </div>
 				 <div class="clearfix"></div>
 			 </div>
