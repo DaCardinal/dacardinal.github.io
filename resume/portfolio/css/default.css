@@ -1,0 +1,28 @@
+/*----*/
+.main{  
+  padding:2em 0;
+}
+.content{
+	margin-right:3em;
+}
+.glyphicon {
+  top:1px;
+}
+.glyphicon-file:before,.glyphicon-print:before,.glyphicon-envelope:before,.glyphicon-picture:before{
+    margin-right: 9px;
+  font-size: 14px;
+  color: #6ecadc;
+}
+.details_header{
+	padding: 0em 1em 0 2em;
+}
+.details_header ul li{
+	display:inline-block;
+}
+.details_header ul li a{
+	padding:0 1em;
+	color:#333;
+}
+.details_header ul li a:hover{
+	color:#6ecadc;
+}
