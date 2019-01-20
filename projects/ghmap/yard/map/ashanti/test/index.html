@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/ammap.css" type="text/css" media="all" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+
+<script>
+d3.json('ashanti_topo.json',function(error,data){ // get my json that needs to be converted
+
+var arr = data.objects.collection.geometries; // this is the relevant array
+var newArr = [];  // in order to map each object, i need to put each one into a new array as a single-item array
+
+arr.forEach(function(d,i){
+  var curr = [d];
+  newArr.push(curr);
+})
+
+newArr.forEach(function(e,i){ // now that i have my new array, i want to convert each object that contains a LineString into a Polygon
+
+  var output = e.map(function(d){
+
+    var arcsArr = []; // an empty array to push each single value of the LineString arcs into
+    return {
+      "type": "Polygon", // change the type to polygon
+      "properties": d.properties, // keep the properties
+      "arcs": d.geometries.map(function(g) { // a single key-value pair for arcs, made up of the individual arcs from the LineString
+        arcsArr.push(g.arcs[0]);
+        return [arcsArr]; // the array of arcs must be in another array
+      })
+    };
+
+  });
+
+  var output = output[0]; // get only the first item in the output array, which is the object i have modified
+  output.arcs = output.arcs[0]; // and change the arcs so we're only taking the first array (as we've duplicated the arrays)
+  $('body').append(JSON.stringify(output)+','); // append the whole thing to the body so I can copy it and paste it into the appropriate part of the JSON
+});
+});
+</script>
+</body>
+</html>
+

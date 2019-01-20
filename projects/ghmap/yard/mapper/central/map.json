@@ -1,0 +1,29 @@
+
+<html>
+	<head>
+		<style>
+			html, body, #wrapper {
+			   height:100%;
+			   width: 100%;
+			   margin: 0;
+			   padding: 0;
+			   border: 0;
+			   font-family: Arial, Helvetica, sans-serif;
+			}
+			#wrapper td {
+			   vertical-align: middle;
+			   text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+	   <table id="wrapper" style="margin-top: -20%;">
+		  <tr>
+			 <td>
+				 <h2 style="color: #626262;">Some error has occured</h2>
+				 <p>Either a server error has occurred or the page no longer exists.</p>
+             </td>
+		  </tr>
+	   </table>
+	</body>
+</html>
